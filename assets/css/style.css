@@ -7,30 +7,16 @@ p, h2 {
 /* ----------- HEADER ----------- */
 .contact_bar {
   width: 100%;
-  padding: 0;
-  height: 50px;
-  background-color: #005c50;
-  color: white;
-  font-size: 2.1rem;
-}
-.contact_bar input {
   height: 40px;
-  line-height: 50px;
-}
-i {
-  margin-left: 5px;
+  background-color: #005c50;
   color: white;
 }
 .banniere {
-  background-image: url('http://miam-images.m.i.pic.centerblog.net/o/e935fac8.jpg');
-  height: 350px;
+  background-image: url('../img/fond_barre.jpg');
+  height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-text-align: center;
-}
-.banniere img {
-  height: 130%;
 }
 .banniere h1 {
   text-align: center;
@@ -38,11 +24,10 @@ text-align: center;
   color: white;
 }
 nav {
-  height: auto;
+  height: 80px;
 }
 nav ul {
   text-align: center;
-  margin-top: 3.5vw;
   line-height: 80px;
 }
 nav ul li {
@@ -81,10 +66,11 @@ nav ul li {
 }
 /* ----------- FIN CARROUSEL ----------- */
 /* ----------- CARTE ARTICLES ----------- */
-.card_article {
-  border: 1px solid #cc50508f;
-  height: 430px;
+.cardBorder {
+  border: 2px solid #cc50508f;
   margin: 1%;
+  padding: 1%;
+  box-shadow: 5px 5px 5px grey;
 }
 .card_article_img {
   width: 100%;
@@ -98,7 +84,7 @@ nav ul li {
 .card_article_text {
   text-align: center;
 }
-.btn {
+.btnCustomAnthony {
   background-color: #005c50;
   color: white;
 }
@@ -110,3 +96,13 @@ footer {
   min-height: 70px;
 }
 /* ----------- FIN FOOTER ----------- */
+.articleTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.modalPictures {
+  height: 30rem;
+  width: auto;
+}
