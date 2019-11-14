@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title></title>
+  <title>KINGDOM OF CHRISTMAS</title>
 </head>
 <body>
   <header>
@@ -13,12 +13,12 @@
   </header>
   <nav>
     <ul>
-      <li>Categorie 1</li>
-      <li>Categorie 2</li>
-      <li>Categorie 3</li>
-      <li>Categorie 4</li>
-      <li>Categorie 5</li>
-      <li>Panier <i class="fas fa-shopping-basket"></i></li>
+      <li>Déguisements</li>
+      <li>Pulls</li>
+      <li>Pyjamas</li>
+      <li>Chaussettes</li>
+      <li>Accessoires</li>
+      <li>Panier<i class="fas fa-shopping-basket"></i></li>
     </ul>
   </nav>
   <div id="carrousel">
@@ -29,31 +29,137 @@
   </div>
   <h2>Articles en promo</h2>
   <div class="row justify-content-center">
-    <div class="col-11 col-md-2 card_article">
-      <div class="card_article_img"><img src="https://lepullmoche.shop/wp-content/uploads/2018/11/unnamed-file-27-e1543597479536.jpg"></div>
-      <div class="card_article_text"><h2>Titre article</h2><p>13,00€</p>
+    <!-- PROMO CARD 01 DEBUT -->
+    <div class="col-11 col-md-2 card cardBorder">
+      <div class="card_article_img" data-toggle="modal" data-target="#promo01"><img src="assets/img/deguisement01.jpg" alt="déguisement de Père Noël chevauchant le renne Rudolph"></div>
+      <div class="card_article_text"><p class="articleTitle">Déguisement Père Noël galopant</p><p class="text-success">34,99€</p><p class="text-danger"><s>69,99€</s></p>
         <!-- MODALE -->
-        <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-xl">Plus d'infos</button>
-        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+        <button type="button" class="btn btnCustomAnthony" data-toggle="modal" data-target="#promo01">Plus d'infos</button>
+        <div id="promo01" class="modal fade" tabindex="-1" role="dialog"
         aria-labelledby="myHugeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            ...
+          <div class="modal-content rounded-lg">
+            <div>
+              <img class="img-fluid" src="assets/img/deguisement01.jpg" alt="déguisement de Père Noël chevauchant le renne Rudolph">
+              <p>Redécouvrez les joies et la magie de la chevauchée sauvage avec ce costume qui vous mettra aux rênes du célèbre renne Rudolph !</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- FIN MODALE -->
+    </div>
+  </div>
+  <!-- PROMO CARD 01 END -->
+  <!-- PROMO CARD 02 DEBUT -->
+  <div class="col-11 col-md-2 card cardBorder">
+    <div class="card_article_img" data-toggle="modal" data-target="#promo02"><img src="assets/img/pull01.jpg"></div>
+    <div class="card_article_text"><p class="articleTitle">Pull Calendrier de l'Avant</p><p class="text-success">14,99€</p><p class="text-danger"><s>24,99€</s></p>
+      <!-- MODALE -->
+      <button type="button" class="btn btnCustomAnthony" data-toggle="modal" data-target="#promo02">Plus d'infos</button>
+      <div id="promo02" class="modal fade" tabindex="-1" role="dialog"
+      aria-labelledby="myHugeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content rounded-lg">
+          <img src="assets/img/pull01.jpg" class="img-fluid">
+          <p>Offrez-vous quelques sensations hivernales et un peu d'impatience avec ce pull qui vous aidera à compter les jours jusqu'à l'arrivée du Père Noël.</p>
+        </div>
       </div>
     </div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
+    <!-- FIN MODALE -->
   </div>
-  <div class="row justify-content-center">
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
+</div>
+<!-- PROMO CARD 02 END -->
+<!-- PROMO CARD 03 DEBUT -->
+<div class="col-11 col-md-2 card cardBorder">
+  <div class="card_article_img" data-toggle="modal" data-target="#promo03"><img src="assets/img/pyjama01.jpg" alt="famille portant chacun un pyjama rouge avec des visages de rennes"></div>
+  <div class="card_article_text"><p class="articleTitle">Pyjama "Rennes à gogo"</p><p class="text-success">9,99€</p><p class="text-danger"><s>19,99€</s></p>
+    <!-- MODALE -->
+    <button type="button" class="btn btnCustomAnthony" data-toggle="modal" data-target="#promo03">Plus d'infos</button>
+    <div id="promo03" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myHugeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content ronded-lg flex-row flex-wrap justify-content-center p-3">
+        <img class="d-block img-thumbnail modalPictures" src="assets/img/pyjama01.jpg" alt="famille portant chacun un pyjama rouge avec des visages de rennes">
+        <div class="col-md-8">
+          <p>Faites rayonner l'ensemble de votre petite famille grâce à ces pyjamas chauds et doux, parfaits pour attendre les joujoux au pied du sapin.</p>
+          <div class="w-100 p-2"></div>
+          <select class="" name="sizeSelection">
+            <optgroup label="Enfants">
+              <option value="childS">Enfant - S</option>
+              <option value="childM">Enfant - M</option>
+              <option value="childL">Enfant - L</option>
+              <option value="childXL">Enfant - XL</option>
+            </optgroup>
+            <optgroup label="Femmes">
+              <option value="womanS">Femme - S</option>
+              <option value="womanM">Femme - M</option>
+              <option value="womanL">Femme - L</option>
+              <option value="womanXL">Femme - XL</option>
+            </optgroup>
+            <optgroup label="Hommes">
+              <option value="manS">Homme - S</option>
+              <option value="manM">Homme - M</option>
+              <option value="manL">Homme - L</option>
+              <option value="manXL">Homme - XL</option>
+            </optgroup>
+          </select>
+          <div class="w-100 p-2"></div>
+          <button class="btn btnCustomAnthony" name="button">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODALE -->
+</div>
+</div>
+<!-- PROMO CARD 03 END -->
+<!-- PROMO CARD 04 DEBUT -->
+<div class="col-11 col-md-2 card cardBorder">
+  <div class="card_article_img" data-toggle="modal" data-target="#promo04"><img src="assets/img/chaussettes01.jpg" alt="chaussettes rennes bonhommes de neige"></div>
+  <div class="card_article_text"><p class="articleTitle">Chaussettes renne de neige</p><p class="text-success">4,99€</p><p class="text-danger"><s>9,99€</s></p>
+    <!-- MODALE -->
+    <button type="button" class="btn btnCustomAnthony" data-toggle="modal" data-target="#promo04">Plus d'infos</button>
+    <div id="promo04" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myHugeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <img class="img-fluid" src="assets/img/chaussettes01.jpg" alt="chaussettes rennes bonhommes de neige">
+        <p>Evitez d'attraper froid avec ces douces chaussettes qui vous permettront de profiter de la neige tout en restant près de l'âtre.</p>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODALE -->
+</div>
+</div>
+<!-- PROMO CARD 04 END -->
+<!-- PROMO CARD 05 DEBUT -->
+<div class="col-11 col-md-2 card cardBorder">
+  <div class="card_article_img" data-toggle="modal" data-target="#promo05"><img src="assets/img/accessoire01.jpg" alt="serre-tête avec ramures et décorations"></div>
+  <div class="card_article_text"><p class="articleTitle">Serre-tête du renne de Noël</p><p class="text-success">5,99€</p><p class="text-danger"><s>11,99€</s></p>
+    <!-- MODALE -->
+    <button type="button" class="btn btnCustomAnthony" data-toggle="modal" data-target="#promo05">Plus d'infos</button>
+    <div id="promo05" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="myHugeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <img class="img-fluid" src="assets/img/accessoire01.jpg" alt="serre-tête avec ramures et décorations">
+        <p>Manifestez votre adoration pour les rennes avec ce serre-tête qui devrait attirer les regards de vos convives.</p>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODALE -->
+</div>
+</div>
+<!-- PROMO CARD 05 END -->
+<div class="col-2 card_article"></div>
+<div class="col-2 card_article"></div>
+<div class="col-2 card_article"></div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-2 card_article"></div>
+  <div class="col-2 card_article"></div>
+  <div class="col-2 card_article"></div>
+  <div class="col-2 card_article"></div>
 </div>
 <footer>
   Mentions Legales | Bla Bla
