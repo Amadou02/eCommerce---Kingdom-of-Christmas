@@ -4,56 +4,94 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title></title>
+  <title>Kingdom of Christmas</title>
 </head>
 <body>
   <header>
-    <div class="contact_bar">Logo Facebook | Logo Twitter | Logo mail | ??</div>
+    <div class="contact_bar">
+      Logo Facebook | Logo Twitter | Logo mail | ??
+      <input class="navbar navbar-light" type="text" placeholder="Déguissement">
+      <button class="btn btn-outline-success mr-5 my-2 my-sm-0" type="submit">Recherche</button>
+    </div>
     <div class="banniere"><h1>Kingdom of Christmas</h1></div>
   </header>
   <nav>
     <ul>
-      <li>Categorie 1</li>
-      <li>Categorie 2</li>
-      <li>Categorie 3</li>
-      <li>Categorie 4</li>
-      <li>Categorie 5</li>
-      <li>Panier <i class="fas fa-shopping-basket"></i></li>
+      <li id="home"><a href="#">Accueil</a></li>
+      <li id="disguise"><a href="#">Déguisements</a></li>
+      <li id="sweater"><a href="#">Pulls</a></li>
+      <li id="sock"><a href="#">Chaussettes</a></li>
+      <li id="pajamas"><a href="#">Pyjamas</a></li>
+      <li id="accessory"><a href="#">Accesoires</a></li>
+      <div class="float-right">
+        <li>0,00 euros</li>
+        <li>0 article</li>
+        <button type="button" data-toggle="modal" data-target="#exampleModalScrollable">
+          <i class="fas fa-shopping-basket sizeBasket"></i>
+        </button>
+      </div>
     </ul>
   </nav>
+<!-- Modal -->
+<div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalCenteredLabel">Listes des articles</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="home"></div>
+      <div class="disguise"></div>
+      <div class="sweater"></div>
+      <div class="pajamas"></div>
+      <div class="sock"></div>
+      <div class="accessory"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Commander</button>
+    </div>
+  </div>
+</div>
+</div>
   <div id="carrousel">
     <ul>
       <li><img src="https://nice-weekend.com/wp-content/uploads/2014/12/march%C3%A9-noel-nice-cote-dazur.jpg"/></li>
       <li><img src="https://www.christmaskingdom.com.au/wp-content/themes/christmaskingdom/assets/img/header-trees.jpg"/></li>
     </ul>
   </div>
-  <h2>Articles en promo</h2>
-  <div class="row justify-content-center">
-    <div class="col-11 col-md-2 card_article">
-      <div class="card_article_img"><img src="https://lepullmoche.shop/wp-content/uploads/2018/11/unnamed-file-27-e1543597479536.jpg"></div>
-      <div class="card_article_text"><h2>Titre article</h2><p>13,00€</p>
-        <!-- MODALE -->
-        <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-xl">Plus d'infos</button>
-        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
-        aria-labelledby="myHugeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            ...
+  <div id="article">
+    <h2>Articles en promo</h2>
+    <div class="row justify-content-center">
+      <div class="col-11 col-md-2 card_article">
+        <div class="card_article_img"><img src="https://lepullmoche.shop/wp-content/uploads/2018/11/unnamed-file-27-e1543597479536.jpg"></div>
+        <div class="card_article_text"><h2>Titre article</h2><p>13,00€</p>
+          <!-- MODALE -->
+          <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-xl">Plus d'infos</button>
+          <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog"
+          aria-labelledby="myHugeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              ...
+            </div>
           </div>
         </div>
       </div>
-      <!-- FIN MODALE -->
-      </div>
     </div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
-    <div class="col-2 card_article"></div>
+    <!-- FIN MODALE -->
   </div>
+    <div class="col-2 card_article"></div>
+    <div class="col-2 card_article"></div>
+    <div class="col-2 card_article"></div>
   <div class="row justify-content-center">
     <div class="col-2 card_article"></div>
     <div class="col-2 card_article"></div>
     <div class="col-2 card_article"></div>
     <div class="col-2 card_article"></div>
+</div>
 </div>
 <footer>
   Mentions Legales | Bla Bla

@@ -18,21 +18,26 @@ p, h2 {
   background-size: cover;
   background-position: center center;
 }
-.banniere h1 {
-  text-align: center;
-  line-height: 200px;
-  color: white;
-}
 nav {
   height: 80px;
 }
 nav ul {
-  text-align: center;
+  text-align: left;
   line-height: 80px;
 }
 nav ul li {
   list-style: none;
   display :inline-block;
+}
+li a {
+  color: GoldenRod;
+}
+li a:hover {
+  color: #005c50;
+  text-decoration: none;
+}
+li {
+  color: GoldenRod;
 }
 /* ----------- FIN HEADER ----------- */
 /* ----------- CARROUSEL ----------- */
@@ -95,3 +100,12 @@ footer {
   min-height: 70px;
 }
 /* ----------- FIN FOOTER ----------- */
+button {
+  border: none;
+  background-color: white;
+}
+.sizeBasket {
+font-size: 30px;
+color: #005c50;
+text-align: center;
+}
