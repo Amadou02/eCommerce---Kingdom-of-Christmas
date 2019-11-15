@@ -51,32 +51,24 @@ input:before {
     line-height: 200px;
     color: white;
   }
-  nav {
+  /* nav {
     height: auto;
     height: 80px;
   }
   nav a {
     color: #d43f3f;
-  }
-  nav a:hover {
-    color: #d6bc2f;
-  }
-  nav ul {
     text-align: center;
     line-height: 80px;
-  }
-  nav ul li {
     list-style: none;
     font-family: "Noel";
     font-size: 3.5rem;
     display :inline-block;
   }
-  nav button i, nav button{
-    border: none;
+  .navbarButton{
     background-color: white;
-    color: #d43f3f;
+    color: red;
     font-size: 2.5rem;
-  }
+  } */
   /* ----------- FIN HEADER ----------- */
   /* ----------- CARROUSEL ----------- */
   #carrousel {
@@ -156,8 +148,12 @@ input:before {
     width: auto;
 
   }
-  /* Ajustement navbar */
-  @media screen and (max-width: 990px) {
-    .navbar{
-      border-right:none;
-      }}
+  .navbarItems {
+    color: #D43F3F;
+    text-align: center;
+    line-height: 3rem;
+    list-style: none;
+    font-family: "Noel";
+    font-size: 2.5rem;
+    display :inline-block;
+  }
