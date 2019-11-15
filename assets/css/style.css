@@ -114,6 +114,7 @@ nav button i, nav button{
   margin: 1%;
   padding: 1%;
   box-shadow: 5px 5px 5px grey;
+  border-radius: 10px;
 }
 .card_article_img {
   width: 100%;
