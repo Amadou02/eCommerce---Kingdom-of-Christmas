@@ -37,11 +37,11 @@ let accessoire01 = new Article('Serre-tête du renne', 'R001', 'Un fabuleux serr
  let pull03 = new Article('Pull enguirlandé', 'R018', 'Vous aimeriez dégager autant de classe et de festivité que votre sapin de Noël ? Ouvrez les hostilités et prouvez lui que vous ne reculerez devant rien pour asseoir votre suprématie lors des fêtes de fin d\'année !', '24.99', 'assets/img/pull03.jpg', 'Pulls');
  let pull04 = new Article('Pull de l\'adorateur du Père Noël', 'R019', 'Déclarez votre flamme au plus Noël des padre avec ce pull qui ne laissera aucun doute sur votre inclinaison sentimentale. Fabrication garantie 100% en poils de barbe de votre idole.', '199.99', 'assets/img/pull04.jpg', 'Pulls');
  let pull05 = new Article('Pull "Fluffy Snow"', 'R020', 'Dites non au froid à l\'aide de ce pull rappelant les chutes de poudreuse sur les forêts. Chacun des détails de ce pull est soigneusement confectionné à partir de poils de Yéti des montagnes du Grand Nord et vous assurera de conserver votre chaleur corporelle quelque soit la température extérieure.', '29.99', 'assets/img/pull05.jpg', 'Pulls');
- let pyjama01 = new Article('Pyjama de l\'avalanche de rennes', 'R021', 'Exprimez votre amour pour les compagnons de route du Père Noël avec ce confortable pyjama. Disponible pour toute la famille.', '19.99', 'assets/img/pyjama01.jpg', 'Pyjamas');
+ let pyjama01 = new Article('Pyjama de l\'avalanche de rennes', 'R021', 'Exprimez votre amour pour les compagnons de route du Père Noël avec ce confortable pyjama. Disponible pour toute la famille.', '19.99', 'assets/img/pyjama01.jpg', 'Promotions');
  let pyjama02 = new Article('Pyjama du lutin', 'R022', 'Vous aviez toujours rêvé d\'aller donner un coup de main aux ateliers de confection des jouets du Père Noël aux côtés des lutins si chers à votre coeur ? Alors n\'attendez plus et procurez-vous ce pyjama aux couleurs de vos artisans préférés !', '19.99', 'assets/img/pyjama02.jpg', 'Pyjamas');
  let pyjama03 = new Article('Pyjama breuvage de Noël', 'R023', 'Ne mettez pas votre passion pour votre breuvage favori de côté avec ces pyjamas mettant en avant votre côté alcoolique, addict au café ou au biberon sur votre torse.', '19.99', 'assets/img/pyjama03.jpg', 'Pyjamas');
- let pyjama04 = new Article('Pyjama des icônes festives', 'R024', 'Bien que les couleurs puissent vous rappeler le pays dont proviennent le Gorgonzola et le Colisée, ce pyjama sera bel et bien un hommage vibrant aux icônes de vos fêtes de fin d\'année préférées.', '19.99', 'assets/img/pyjama04.jpg', 'Pyjamas');
- let pyjama05 = new Article('Pyjama des joies hivernales', 'R025', 'Rappelez à votre famille tout ce qui fait les joies de l\'hiver avec ces pyjamas arborant toutes les petites étapes qui font que cette fin d\'année sera magique.', '19.99', 'assets/img/pyjama05.jpg', 'Pyjamas');
+ let pyjama04 = new Article('Pyjama des icônes festives', 'R024', 'Bien que les couleurs puissent vous rappeler le pays dont proviennent le Gorgonzola et le Colisée, ce pyjama sera bel et bien un hommage vibrant aux icônes de vos fêtes de fin d\'année préférées.', '19.99', 'assets/img/pyjama04.jpg', 'Promotions');
+ let pyjama05 = new Article('Pyjama des joies hivernales', 'R025', 'Rappelez à votre famille tout ce qui fait les joies de l\'hiver avec ces pyjamas arborant toutes les petites étapes qui font que cette fin d\'année sera magique.', '19.99', 'assets/img/pyjama05.jpg', 'Promotions');
 
 
   var mon_array = [];
@@ -50,17 +50,16 @@ let accessoire01 = new Article('Serre-tête du renne', 'R001', 'Un fabuleux serr
   var x = 'Promotions';
   boucle(x);
 
-  $('#add_basket').click(function(){
-    var id_shop = $(this).attr('name');
-    console.log(id_shop);
-    alert('ajout de larticle reference :' + id_shop);
-  });
-
    $('.categorie').click(function() {
       x = $(this).attr('id');
       $('.contenu').html('');
       $('#titre_Categorie').html('Nos '+x);
      boucle(x);
+   });
+
+   $('body').on('click', 'button.add_basket', function(){
+     var shop = $(this).attr('id');
+     $('.modal-body').append(shop);
    });
 
  function boucle(x) {
@@ -101,7 +100,7 @@ let accessoire01 = new Article('Serre-tête du renne', 'R001', 'Un fabuleux serr
              </optgroup>
            </select>
            <div class="w-100 p-2"></div>
-           <button class="btn btnCustomAnthony" id="add_basket" name="${mon_array[i].reference}">Ajouter au panier</button>
+           <button class="btn btnCustomAnthony add_basket" id="${mon_array[i].reference}">Ajouter au panier</button>
          </div>
        </div>
      </div>
@@ -112,4 +111,169 @@ let accessoire01 = new Article('Serre-tête du renne', 'R001', 'Un fabuleux serr
 `);
 }
 }   };
+    $('.formDeliveryAdress, .formPayment').hide();
+    $('#buttonContact').click(function(event){
+      event.preventDefault();
+        var isValid = true;
+
+        var name = $('#name').val();
+        var firstName = $('#firstName').val();
+        var mail = $('#mail').val();
+        var phone = $('#phoneNumber').val();
+
+        var checkName = /^[A-Z][a-zéèçàïîêëôöûü]+([ -][A-Z][a-zéèçàïîêëôöûü]+)?$/;
+        var checkFirstName = /^[A-Z][a-zéèçàïîêëôöûü]+([ -][A-Z][a-zéèçàïîêëôöûü]+)?$/;
+        var checkMail = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+        var checkPhone = /^(0|\+33)[1-9]([-. ][0-9]{2}){4}$/;
+
+        $('form span.text-danger').remove();
+
+        if(!checkName.test(name)){
+            isValid = false;
+            var span = $('<span></span>');
+            span.addClass('text-danger');
+            span.text('Veuillez entrer un nom valide');
+            $('#name').after(span);
+        }
+        if(!checkFirstName.test(firstName)){
+            isValid = false;
+            var span = $('<span></span>');
+            span.addClass('text-danger');
+            span.text('Veuillez entrer un prénom valide');
+            $('#firstName').after(span);
+        }
+
+        if(!checkMail.test(mail)){
+            isValid = false;
+            var span = $('<span></span>');
+            span.addClass('text-danger');
+            span.text('Veuillez entrer un mail valide');
+            $('#mail').after(span);
+        }
+        if(!checkPhone.test(phone)){
+            isValid = false;
+            var span = $('<span></span>');
+            span.addClass('text-danger');
+            span.text('Veuillez entrer un numéro de téléphone valide');
+            $('#phoneNumber').after(span);
+        }
+
+        if(!isValid){
+            event.preventDefault();
+        }
+        if (isValid){
+          // alert('gagné');
+            $('.formDeliveryAdress').show();
+            // event.preventDefault();
+        }
+    });
+  $('#buttonDelivery').click(function(event){
+      event.preventDefault();
+      var isValid = true;
+
+      var streetNumber = $('#streetNumber').val();
+      var adress = $('#adress').val();
+      var zipCode = $('#zipCode').val();
+      var city = $('#city').val();
+
+      var checkStreetNumber = /^[0-9]+$/;
+      var checkAdress = /^[A-Z a-z]+$/;
+      var checkZipCode = /^[0-9]{5}$/;
+      var checkcity = /^[A-Z][a-z]+([ -][A-Z][a-z]+)?$/;
+
+      $('form span.text-danger').remove();
+
+      if(!checkStreetNumber.test(streetNumber)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez un numéro de rue valide');
+          $('#streetNumber').after(span);
+      }
+      if(!checkAdress.test(adress)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer une adresse valide');
+          $('#adress').after(span);
+      }
+
+      if(!checkZipCode.test(zipCode)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer une adresse postale valide');
+          $('#zipCode').after(span);
+      }
+      if(!checkcity.test(city)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer une ville valide');
+          $('#city').after(span);
+      }
+
+      if(!isValid){
+          event.preventDefault();
+      }
+      if (isValid){
+        // alert('gagné');
+          $('.formPayment').show();
+          // event.preventDefault();
+      }
+
+  });
+  $('#buttonPayment').click(function(event){
+      var isValid = true;
+
+      var nameOnCard = $('#nameOnCard'). val();
+      var cardNumber = $('#cardNumber').val();
+      var expiryDate = $('#expiryDate').val();
+      var securityCode = $('#securityCode').val();
+
+      var checknameOnCard = /^[A-Z][a-zéèçàïîêëôöûü]+([ -][A-Z][a-zéèçàïîêëôöûü]+)?$/;
+      var checkcardNumber = /^[0-9]{16}$/;
+      var checkexpiryDate = /^[0-9]{2}\/+([0-9]){2}$/;
+      var checksecurityCode = /^[0-9]{3}$/;
+
+      $('form span.text-danger').remove();
+
+      if(!checknameOnCard.test(nameOnCard)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez un nom valide');
+          $('#nameOnCard').after(span);
+      }
+      if(!checkcardNumber.test(cardNumber)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer un numéro de carte valide');
+          $('#cardNumber').after(span);
+      }
+
+      if(!checkexpiryDate.test(expiryDate)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer une date valide');
+          $('#expiryDate').after(span);
+      }
+
+      if(!checksecurityCode.test(securityCode)){
+          isValid = false;
+          var span = $('<span></span>');
+          span.addClass('text-danger');
+          span.text('Veuillez entrer un cryptogramme valide');
+          $('#securityCode').after(span);
+      }
+
+      if(!isValid){
+          event.preventDefault();
+      }
+      if (isValid){
+        alert('Confirmation de votre commande')
+      }
+  });
 });

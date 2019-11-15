@@ -42,8 +42,87 @@
          </button>
        </div>
        <div class="modal-body">
-         <div class="basket"></div>
-       </div>
+         <h1>Formulaire d'inscription</h1>
+
+              <div class="container">
+        <!--Début Contact  -->
+              <fieldset class="contact">
+                <legend class="contact">Contact</legend>
+
+            <form>
+              <div class="form-group">
+                <label for="name" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="name" name="name" placeholder="Dupont" class="form-control"/>
+                <label for="firstName" class="col-lg-5 col-form-label"></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Laurent" class="form-control"/>
+                <label for="mail" class="col-lg-5 col-form-label"></label>
+                <input type="email" id="mail" name="mail" placeholder="dupontlaurent@hotmail.fr" class="form-control"/>
+                <label for="phoneNumber" class="col-lg-5 col-form-label"></label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="06.00.00.00.00" class="form-control"/>
+          </div>
+        <div class="form-group">
+                <button type="submit" id="buttonContact" class="btn btn-danger btn-lg btn-block">Suivant </button>
+          </div>
+            </form>
+
+            </fieldset>
+        <!--Fin Contact  -->
+        <!--Début Livraison  -->
+            <div class="formDeliveryAdress">
+            <fieldset class="deliveryAdress">
+              <legend class="deliveryAdress">Adresse de Livraison</legend>
+
+            <form>
+              <div class="form-group">
+                <label for="streetNumber" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="streetNumber" name="streetNumber" placeholder="12" class="form-control"/>
+                <label for="adress" class="col-lg-5 col-form-label"></label>
+                  <textarea type="text" id="adress" name="adress" Rows"4" placeholder="Avenue Norris" class="form-control"></textarea>
+                <label for="zipCode" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="zipCode" name="zipCode" placeholder="80000" class="form-control"/>
+                <label for="city" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="city" name="city" placeholder="Amiens" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <button type="button" id="buttonDelivery" class="btn btn-danger btn-lg btn-block">Suivant</button>
+        </div>
+            </form>
+
+            </div>
+            </fieldset>
+        <!--Fin Livraison  -->
+          <div class="formPayment">
+            <fieldset class="payment">
+              <legend class="payment">Paiement</legend>
+              <h2> Vous n'avez pas de compte PayPal?</h2>
+              <p>Payer par carte de débit ou de crédit sans posséder de compte Paypal<p>
+            <form>
+                <div class="form-group">
+                <label for="nameOnCard" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="nameOnCard" name="nameOnCard"placeholder="Dupont" class="form-control"/>
+                <label for="paymentMode" class="col-lg-5 col-form-label">Mode de paiement</label>
+              <div class="imgPayment">
+                <input type="radio" name="card"><img src="assets/img/visa.png" alt="visa" id="visa"/>
+                <input type="radio" name="card"><img src="assets/img/mastercard.png" alt="mastercard" id="masterCard"/>
+                <input type="radio" name="card"><img src="assets/img/american express.png" alt="americanExpress" id="americanExpress"/>
+                <input type="radio" name="card"><img src="assets/img/paypal.png" alt="paypal" id="paypal"/>
+              </div>
+                <div class="form-group">
+                <label for="cardNumber" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="cardNumber" name="cardNumber" placeholder="1231231231231231" class="form-control"/>
+                <label for="expiryDate" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="expiryDate" name="expiryDate" placeholder="11/11" class="form-control"/>
+                <label for="securityCode" class="col-lg-5 col-form-label"></label>
+                  <input type="text" id="securityCode" name="securityCode" placeholder="123" class="form-control"/>
+              </div>
+          <div class="form-group">
+              <button type="submit" id="buttonPayment"class="btn btn-danger btn-lg btn-block">Payer</button>
+        </div>
+            </form>
+            </fieldset>
+
+        <!--fin container  -->
+      </div></div>       </div>
        <div class="modal-footer">
          <button type="button" class="btn btn-secondary" data-dismiss="modal">Commander</button>
      </div>

@@ -157,3 +157,9 @@ footer {
   width: auto;
 
 }
+
+#visa, #masterCard, #americanExpress, #paypal{
+  height: 40px;
+  weight:40%;
+  margin-right: 10px;
+}
