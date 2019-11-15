@@ -8,7 +8,31 @@ $(function(){
   this.image = image;
   }
 }
-  let article1 = new Article('Pere noel', '#001', 'Costume', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let accessoire01 = new Article('Serre-tête du renne', '#001', 'Un fabuleux serre-tête qui annoncera votre amour inconditionnel pour votre renne favori. Les douces ramures et les oreilles aux aguets devraient attirer sans soucis les regards de tous vos convives.', '9.99', 'assets/img/accessoire01.jpg');
+  let accessoire02 = new Article('Gants rouges à fourrure blanche', '#002', 'Description', '14.99', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let accessoire03 = new Article('Pere noel', '#003', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let accessoire04 = new Article('Pere noel', '#004', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let accessoire05 = new Article('Pere noel', '#005', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let chaussettes01 = new Article('Pere noel', '#006', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let chaussettes02 = new Article('Pere noel', '#007', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let chaussettes03 = new Article('Pere noel', '#008', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let chaussettes04 = new Article('Pere noel', '#009', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let chaussettes05 = new Article('Pere noel', '#010', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let deguisement01 = new Article('Pere noel', '#011', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let deguisement02 = new Article('Pere noel', '#012', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let deguisement03 = new Article('Pere noel', '#013', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let deguisement04 = new Article('Pere noel', '#014', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let deguisement05 = new Article('Pere noel', '#015', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pull01 = new Article('Pere noel', '#016', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pull02 = new Article('Pere noel', '#017', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pull03 = new Article('Pere noel', '#018', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pull04 = new Article('Pere noel', '#019', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pull05 = new Article('Pere noel', '#020', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pyjama01 = new Article('Pere noel', '#021', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pyjama02 = new Article('Pere noel', '#022', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pyjama03 = new Article('Pere noel', '#023', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pyjama04 = new Article('Pere noel', '#024', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
+  let pyjama05 = new Article('Pere noel', '#025', 'Description', 'prix', 'https://cdn.deguisetoi.fr/images/rep_art/gra/206/3/206366/deguisement-pere-noel-costume-adulte_206366.jpg');
 
   var mon_array = [];
   mon_array.push(article1);
