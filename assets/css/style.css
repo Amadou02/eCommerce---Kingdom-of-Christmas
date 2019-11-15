@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Noel";
+  src: url("../font/Noel.ttf") format("truetype");
+}
+
 body {
   overflow-x: hidden;
 }
@@ -8,29 +13,38 @@ p, h2 {
 .contact_bar {
   width: 100%;
   padding: 0;
-  height: 50px;
+  height: 45px;
   background-color: #005c50;
   color: white;
   font-size: 2.1rem;
+  position: relative;
 }
 .contact_bar input {
-  height: 40px;
-  line-height: 50px;
+  height: 37px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  font-size: 1.2rem;
 }
+input:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f095";}
 i {
   margin-left: 5px;
   color: white;
 }
 .banniere {
   background-image: url('http://miam-images.m.i.pic.centerblog.net/o/e935fac8.jpg');
-  height: 350px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-text-align: center;
+  text-align: center;
 }
 .banniere img {
-  height: 130%;
+  height: 120%;
 }
 .banniere h1 {
   text-align: center;
@@ -39,22 +53,36 @@ text-align: center;
 }
 nav {
   height: auto;
+height: 80px;
+}
+nav a {
+  color: #d43f3f;
+}
+nav a:hover {
+  color: #d6bc2f;
 }
 nav ul {
   text-align: center;
-  margin-top: 3.5vw;
   line-height: 80px;
 }
 nav ul li {
   list-style: none;
+  font-family: "Noel";
+font-size: 3.5rem;
   display :inline-block;
+}
+nav button i, nav button{
+  border: none;
+  background-color: white;
+  color: #d43f3f;
+  font-size: 2.5rem;
 }
 /* ----------- FIN HEADER ----------- */
 /* ----------- CARROUSEL ----------- */
 #carrousel {
   margin: auto;
   width: 100%;
-  height: 380px;
+  height: 280px;
   overflow: hidden;
   display: inline-block;
 }
@@ -89,7 +117,7 @@ nav ul li {
 }
 .card_article_img {
   width: 100%;
-  height: 70%;
+  min-height: 70%;
 }
 .card_article_img img {
   height: 100%;
@@ -102,6 +130,12 @@ nav ul li {
 .btnCustomAnthony {
   background-color: #005c50;
   color: white;
+}
+#titre_Categorie {
+text-align: center;
+ font-family: "Noel";
+  font-size: 4rem;
+  color: #d43f3f;
 }
 /* ----------- FIN CARTE ARTICLES ----------- */
 /* ----------- FOOTER ----------- */
@@ -120,4 +154,5 @@ footer {
 .modalPictures {
   height: 30rem;
   width: auto;
+
 }
