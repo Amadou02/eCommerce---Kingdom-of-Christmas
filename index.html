@@ -11,10 +11,38 @@
 <body>
     <header>
         <div class="contact_bar">
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-twitter-square"></i></a>
-            <a href=""><i class="fas fa-envelope-open-text"></i></a>
-            <span><input type="text" name="" class="float-right" value="" placeholder="Recherche"></span>
+            <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a>
+            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#contactModal"><i class="fas fa-envelope-open-text fa-2x" ></i></a></button>
+                 <!-- Modal -->
+                 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content text-dark">
+                       <div class="modal-header d-flex justify-content-center">
+                         <h5 class="modal-title">Contact</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                         </button>
+                       </div>
+                       <div class="modal-body">
+                         <p>
+                           <i class="fa fa-phone-square" aria-hidden="true"></i>
+                           <b>Téléphone :</b><i> 0648652847</i>
+                           <br>
+                           <i class="fa fa-envelope" aria-hidden="true"></i>
+                           <b>Mail : </b><i><a href="mailto:contact@kingdomOfChristmas.net">contact@kingdomOfChristmas.net</a></i>
+                           <br>
+                           <i class="fa fa-home" aria-hidden="true"></i>
+                           <b>Adresse : </b><i>15 rue du Général Leclerc,<br>
+                             80000 Amiens</i>
+                           </p>
+                       </div>
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-danger">Fermer</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>            
         </div>
         <div class="banniere"><img src="https://cdn.discordapp.com/attachments/644328214549757982/644460924815802388/KingdomOfChristmas.png"></div>
     </header>
@@ -157,7 +185,7 @@
     <footer>
             <!-- Bouton ouverture modal -->
             <div class="row justify-content-center">
-              <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
+              <div class="col-xl-2 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalLegalNotice" data-toggle="modal" data-target="#modalLegalNotice">
                 Mentions Légales
             </button>
@@ -228,7 +256,7 @@
             </div>
           </div>
             <!-- Bouton ouverture modal -->
-            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
+            <div class="col-xl-2 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalGeneralCondition" data-toggle="modal" data-target="#modalGeneralCondition">
                 Conditions Générales
             </button>
@@ -334,7 +362,7 @@
             </div>
           </div>
             <!-- Button ouverture modal -->
-            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
+            <div class="col-xl-2 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalRefund" data-toggle="modal" data-target="#modalRefund">
                 Politique de remboursement
             </button>
@@ -392,7 +420,7 @@
             </div>
           </div>
             <!-- Boutton ouverture modal-->
-            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
+            <div class="col-xl-2 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalDeclarationConfidentiality" data-toggle="modal" data-target="#modalDeclarationConfidentiality">
                 Déclaration de confidentialité
             </button>
@@ -467,7 +495,10 @@
                 </div>
             </div>
           </div>
+        </div>
+
           <!-- Large modal -->
+          <div class="mt-2 row justify-content-center">
           <button class="modalDeclarationConfidentiality" data-toggle="modal" data-target=".bd-example-modal-lg">
             Admin : Add article
           </button>
@@ -494,7 +525,7 @@
                 </form>
               </div>
             </div>
-          </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
