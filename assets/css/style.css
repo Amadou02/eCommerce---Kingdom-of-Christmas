@@ -33,7 +33,9 @@ h2 {
     font-size: 1.2rem;
 }
 
-.contact_bar span:before {
+.contact_bar .modal-body{
+  font-size: 18px;
+  background-color:#005C50;
 }
 
 i {

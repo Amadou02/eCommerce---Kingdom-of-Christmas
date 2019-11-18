@@ -93,7 +93,7 @@ $(function () {
         console.log(mon_array[i].nom)
         //CETTE CARD VA DONC SE REPETER POUR CHAQUE ARTICLE. AVEC A CHAQUE INSTANCE DE LA BOUCLE, LES PARAMETRES DE L'OBJET EN COURS
         $('.contenu').append(`<!-- PROMO CARD DEBUT${mon_array[i].reference} -->
-          <div class="col-11 col-md-5 col-lg-2 card cardBorder">
+          <div class="col-11 col-md-5 col-xl-2 card cardBorder">
           <div class="card_article_img" data-toggle="modal" data-target="#${mon_array[i].reference}"><img src="${mon_array[i].image}" alt="img_article"></div>
           <div class="card_article_text"><p class="articleTitle">${mon_array[i].nom}</p><p class="text-success">${mon_array[i].prix}€</p>
           <!-- MODALE -->
