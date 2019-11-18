@@ -14,7 +14,7 @@
             <a href=""><i class="fab fa-facebook-square"></i></a>
             <a href=""><i class="fab fa-twitter-square"></i></a>
             <a href=""><i class="fas fa-envelope-open-text"></i></a>
-            <input type="text" name="" class="float-right" value="" placeholder="Recherche">
+            <span><input type="text" name="" class="float-right" value="" placeholder="Recherche"></span>
         </div>
         <div class="banniere"><img src="https://cdn.discordapp.com/attachments/644328214549757982/644460924815802388/KingdomOfChristmas.png"></div>
     </header>
@@ -39,9 +39,8 @@
                 <li>Accessoires</li>
             </a>
             <div class="float-right">
-                0.00€
                 <button type="button" class="myBasket" data-toggle="modal" data-target="#exampleModalScrollable">
-                    <i class="fas fa-shopping-basket sizeBasket"></i>
+<i class="fas fa-shopping-basket sizeBasket"></i>
                 </button>
             </div>
         </ul>
@@ -57,11 +56,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h1>Formulaire d'inscription</h1>
-
+                  <div class="firt_Step_Basket"></div>
                     <div class="container">
                         <!--Début Contact  -->
                         <fieldset class="contact">
+                          <h1>Formulaire d'inscription</h1>
                             <legend class="contact">Contact</legend>
 
                             <form>
@@ -142,7 +141,6 @@
                 </div>
                 <div class="modal-footer">
                     <div class="h3">Total à payer : <span id="total_Basket">0.00</span>€</div>
-                    <button type="button" class="btn btnCustomAnthony" data-dismiss="modal">Commander</button>
                 </div>
             </div>
         </div>
@@ -157,8 +155,9 @@
     <div class="row justify-content-center contenu">
     </div>
     <footer>
-        <div class="d-flex justify-content-center">
             <!-- Bouton ouverture modal -->
+            <div class="row justify-content-center">
+              <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalLegalNotice" data-toggle="modal" data-target="#modalLegalNotice">
                 Mentions Légales
             </button>
@@ -227,7 +226,9 @@
                     </div>
                 </div>
             </div>
+          </div>
             <!-- Bouton ouverture modal -->
+            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalGeneralCondition" data-toggle="modal" data-target="#modalGeneralCondition">
                 Conditions Générales
             </button>
@@ -331,7 +332,9 @@
                     </div>
                 </div>
             </div>
+          </div>
             <!-- Button ouverture modal -->
+            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalRefund" data-toggle="modal" data-target="#modalRefund">
                 Politique de remboursement
             </button>
@@ -387,7 +390,9 @@
                     </div>
                 </div>
             </div>
+          </div>
             <!-- Boutton ouverture modal-->
+            <div class="col-xl-1 col-lg-2 col-sm-6 col-12">
             <button type="button" class="modalDeclarationConfidentiality" data-toggle="modal" data-target="#modalDeclarationConfidentiality">
                 Déclaration de confidentialité
             </button>
@@ -461,7 +466,35 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
+          <!-- Large modal -->
+          <button class="modalDeclarationConfidentiality" data-toggle="modal" data-target=".bd-example-modal-lg">
+            Admin : Add article
+          </button>
+
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+               aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <form class="form_Add_Item">
+                  <h1 class="text-danger">Ajouter un article</h1>
+                  <input type="text" name="" id="name_Item" placeholder="Nom de l'article" required>
+                  <input type="text" name="" id="ref_Item" placeholder="Sa référence : composé d'un R+ 3 chiffres" required>
+                  <input type="text" name="" id="desc_Item" placeholder="Sa description" required>
+                  <input type="text" name="" id="price_Item" placeholder="Son prix"required>
+                  <input type="text" name="" id="src_Item" placeholder="Le lien de son image"required>
+                  <select id="cat_Item">
+                        <option value="dog">Accessoires</option>
+                        <option value="cat">Chaussettes</option>
+                        <option value="hamster">Déguisements</option>
+                        <option value="parrot">Pulls</option>
+                        <option value="spider">Pyjamas</option>
+                    </select>
+                    <input type="submit" id="new_Item" value="Envoyer l'article">
+                </form>
+              </div>
+            </div>
+          </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
