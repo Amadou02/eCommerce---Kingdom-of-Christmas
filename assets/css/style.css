@@ -62,38 +62,7 @@ i {
     color: white;
 }
 
-nav {
-    height: auto;
-    height: 80px;
-}
 
-nav a {
-    color: #d43f3f;
-}
-
-nav a:hover {
-    color: #d6bc2f;
-}
-
-nav ul {
-    text-align: center;
-    line-height: 80px;
-}
-
-nav ul li {
-    list-style: none;
-    font-family: "Noel";
-    font-size: 3.5rem;
-    display: inline-block;
-}
-
-nav button i,
-nav button {
-    border: none;
-    background-color: white;
-    color: #d43f3f;
-    font-size: 2.5rem;
-}
 
 /* ----------- FIN HEADER ----------- */
 /* ----------- CARROUSEL ----------- */
@@ -171,7 +140,14 @@ nav button {
 
 /* ----------- FIN CARTE ARTICLES ----------- */
 /* ----------- FOOTER ----------- */
-
+/* Pour Mariah <3 */
+#audioPlayer {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  background-color: #00ffdd;
+}
+/* Pour Mariah ! <3 */
 /* ----------- FIN FOOTER ----------- */
 .articleTitle {
     text-align: center;
@@ -265,12 +241,12 @@ nav button {
 }
 
 footer {
-    background-color: #005c50;
-    color: white;
-    height: auto;
-    padding: 10px;
-    margin-top: 40px;
-    text-align: center;
+  background-color: #005c50;
+     color: white;
+     height: auto;
+     padding-bottom: 2.5rem;
+     padding-top: 1rem;
+     text-align: center;
 }
 
 /* Paramétres pour les boutons d'ouverture des modals*/
@@ -294,4 +270,58 @@ footer {
     font-size: 35px;
 }
 
+.myBasket {
+  background: none;
+  border: none;
+}
+
+.myBasket .fas {
+  color: #d43f3f;
+}
+
 /* ----------- FOOTER ----------- */
+
+.navbarItems {
+  color: #d43f3f;
+  text-align: center;
+  line-height: 2.5rem;
+  list-style: none;
+  font-family: "Noel";
+  font-size: 2.3rem;
+  display :inline-block;
+}
+.navbarItems a{
+  color: #d43f3f;
+  font-size: 3.5rem;
+}
+
+.navbarItems a:hover {
+  color: GoldenRod;
+}
+
+@media screen and (max-width: 768px){
+
+  body .navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    background-size: contain;
+  }
+
+body{
+  margin-bottom: 80px;
+}
+
+.modalLegalNotice,
+.modalGeneralCondition,
+.modalRefund,
+.modalDeclarationConfidentiality  {
+  display: block;
+  width: 100%;
+}
+  #carrousel {
+    display: none;
+  }
+}
