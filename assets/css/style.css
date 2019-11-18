@@ -146,6 +146,7 @@ i {
   top: 1%;
   right: 1%;
   background-color: #00ffdd;
+  z-index: 999;
 }
 /* Pour Mariah ! <3 */
 /* ----------- FIN FOOTER ----------- */
